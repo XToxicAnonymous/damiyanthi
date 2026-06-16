@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-candle-glow: candle-glow 2s ease-in-out infinite alternate;
+  --animate-flame-flicker: flame-flicker 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes candle-glow {
+  0% { transform: scale(1) translate3d(0, 0, 0); filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.5)); }
+  100% { transform: scale(1.08) translate3d(0, 0, 0); filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.8)); }
+}
+@keyframes flame-flicker {
+  0% { transform: scaleY(1) rotate(-1deg) translateZ(0); }
+  20% { transform: scaleY(0.95) scaleX(1.1) rotate(1deg) translateZ(0); }
+  40% { transform: scaleY(1.05) rotate(-0.5deg) translateZ(0); }
+  60% { transform: scaleY(0.98) scaleX(0.98) rotate(1.5deg) translateZ(0); }
+  80% { transform: scaleY(1.02) scaleX(1.05) rotate(-1.5deg) translateZ(0); }
+  100% { transform: scaleY(1) rotate(0deg) translateZ(0); }
+}
+
+/* 120 FPS Hardware CSS Transitions */
+.gpu-accelerated {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* High-tech pulsing dots for background grid system */
+.bg-tech-grid {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Orbit speed optimization */
+@keyframes spin-optimized {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
+.animate-spin-optimized {
+  animation: spin-optimized 30s linear infinite;
+  will-change: transform;
+}
+
+.glitch-text {
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+}
+

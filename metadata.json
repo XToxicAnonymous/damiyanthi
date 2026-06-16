@@ -1,0 +1,6 @@
+{
+  "name": "Damiyanthi Poliyath Memorial",
+  "description": "A respectful, beautiful full-stack memorial application in loving memory of Damiyanthi Poliyath (1941-2026). Features a countdown, interactive guestbook, virtual candle lighting, and AI-powered condolence helper.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
