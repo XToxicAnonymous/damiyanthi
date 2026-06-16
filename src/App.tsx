@@ -12,7 +12,7 @@ import TributeList from "./components/TributeList";
 import PhotoGallery from "./components/PhotoGallery";
 import AIVirtueWall from "./components/AIVirtueWall";
 import AdminPanel from "./components/AdminPanel";
-import FlowerPetals from "./components/FlowerPetals";
+import StarDust from "./components/StarDust";
 import AmbientMusic from "./components/AmbientMusic";
 import { Tribute, Photo } from "./types";
 
@@ -385,8 +385,8 @@ export default function App() {
         {theme === "dark" ? <Sun size={20} className="stroke-[2.5]" /> : <Moon size={20} className="stroke-[2.5]" />}
       </button>
 
-      {/* Floating flower petals overlay and audio players */}
-      <FlowerPetals />
+      {/* Floating stardust overlay and audio players */}
+      <StarDust />
       <AmbientMusic />
 
       {/* Persistent top bar indicating active session if Administrator */}
